@@ -1,0 +1,41 @@
+# Core AI and ML dependencies
+pydantic-ai
+pydantic
+
+# Google Cloud Platform
+google-cloud-aiplatform
+google-cloud-discoveryengine
+google-api-core
+
+# Environment and configuration
+python-dotenv
+click
+
+# Logging and monitoring  
+structlog
+
+# Async and HTTP
+aiohttp
+asyncio-throttle
+
+# Reliability and retries
+tenacity
+
+# Text processing
+regex
+markdown
+
+# Development and testing dependencies
+pytest
+pytest-asyncio
+pytest-cov
+black
+isort
+mypy
+
+# Security
+cryptography
+
+# Optional: For enhanced CLI experience
+rich
+typer

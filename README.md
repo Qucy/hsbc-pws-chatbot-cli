@@ -1,4 +1,4 @@
-# HSBC PWS Chatbot CLI
+# HSBC Public Website Chatbot CLI
 
 An intelligent chatbot for HSBC's public website built with PydanticAI and Vertex AI, providing customer service capabilities through a command-line interface.
 
@@ -14,8 +14,8 @@ An intelligent chatbot for HSBC's public website built with PydanticAI and Verte
 ## Tech Stack
 
 - **Agent Framework**: PydanticAI - Type-safe agent framework
-- **LLM Model**: Google Vertex AI (Gemini Pro)
-- **Search Backend**: Vertex AI Datastore - Vector search
+- **LLM Model**: Google Vertex AI (Gemini 2.5 Flash)
+- **Search Backend**: Vertex AI Datastore & App Engine - Vector search
 - **Configuration**: Environment Variables
 - **Language**: Python 3.11+
 
@@ -193,9 +193,10 @@ hsbc-pws-chatbot-cli/
 │   └── escalation.py         # Human escalation
 ├── processors/               # Processing pipeline
 │   ├── input.py              # Input preprocessing
-│   └── output.py             # Output postprocessing
+│   ├── output.py             # Output postprocessing
+│   └── checker.py            # Checker pipeline
 └── services/                 # External services
-    ├── vertex_ai.py          # Vertex AI client
+    ├── app_search_engine.py  # App Engine search client
     └── datastore.py          # Datastore client
 ```
 
@@ -234,4 +235,4 @@ For technical issues or questions:
 
 ## License
 
-Internal HSBC project - All rights reserved. 
+Internal HSBC project - All rights reserved.
